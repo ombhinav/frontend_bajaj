@@ -11,7 +11,7 @@ function App() {
     try {
       setError('');
       const parsedInput = JSON.parse(jsonInput);
-      const res = await fetch(API_URL, { 
+      const res = await fetch('https://backend-bajaj-1umx.onrender.com/bfhl', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ data: parsedInput.data })
